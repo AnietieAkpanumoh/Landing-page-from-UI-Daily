@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F7F7F7;
+}
+
+/* Styling of the Nav bar using flexbox */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+span {
+  color: #FEE715FF;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px 25px;
+}
+nav ul li a{
+	color: #2D353D;
+	text-decoration: none;
+	font-weight: 400px;
+	text-transform: capitalize;
+}
+
+nav ul li a:hover {
+  color: #AB6242;
+  transition: .3s;
+}
+
+.list-div {
+  margin-left: 10rem;
+}
+
+/* Styling of the login and start trial buttons inside Nav bar */
+
+.login-btn {
+  width: 75px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(246,240,232);
+  border: none;
+  margin-right: 10px; 
+}
+
+.start-trial-btn {
+  width: 130px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(20,32,62);
+  color: white;
+}
+
+/* Styling the middle section of the page with flexbox */
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: rgb(255,252,248);
+  margin: 20px;
+  min-height: 50vh;
+}
+
+/* I choosed to use rem unit for the width cos it provided much flexibility */
+
+.middle-section h1 {
+  font-size: 45px;
+  color: rgb(20,32,62);
+  width: 25rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.middle-section p {
+  font-weight: bold;
+  width: 27rem;
+  text-align: center;
+}
+
+.middle-section button {
+  width: 125px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(20,32,62);
+  color: white;
+  margin-top: 20px;
+}
+
+.line {
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Styling for the bottom section. Using the rem unit for the width is flexible
+with containers */
+
+.bottom-section {
+  display: flex;
+  width: 60rem;
+  min-height: 80vh;
+  margin: 20px auto;
+}
+
+.bottom-section-div {
+  width: 15rem;
+}
+
+.bottom-section h4 {
+  width: 12rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bottom-section-div h4 {
+  width: 13rem;
+}
